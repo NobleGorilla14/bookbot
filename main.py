@@ -28,6 +28,10 @@ def print_report(book_path, wordcount, sorted_char):
     print("--------- Character Count -------")
     for item in sorted_char:
         print(f"{item['char']}: {item['num']}")
-
-
+    print("--------- Vowel Count -----------")
+    for vowel in sorted_char:
+        vowel_list = ['a','e','i','o','u']
+        if vowel['char'] in vowel_list:
+            print(f"{vowel['char']} : {vowel['num']}")
+    print("========== END REPORT ===========")
 main()
